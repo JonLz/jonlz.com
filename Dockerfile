@@ -6,15 +6,6 @@ RUN apk add git openssh
 RUN git config --global user.email "jon.lazar@gmail.com" && \
     git config --global user.name "Jon Lazar"
 
-# Use our build arg to store our private key. Run ssh-keyscan so we aren't
-# prompted to trust the github.com host when we push our changes
-RUN mkdir -p ~/.ssh/ && \
-    echo "$GH_ACTION_DEPLOY_KEY" > ~/.ssh/id_rsa && \
-    chmod 600 ~/.ssh/id_rsa && \
-    ssh-keyscan github.com >> ~/.ssh/known_hosts
-
-RUN echo "$GH_ACTION_DEPLOY_KEY"
-
 WORKDIR /site/
 ADD . /site/
 
