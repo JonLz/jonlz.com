@@ -13,6 +13,8 @@ RUN mkdir -p ~/.ssh/ && \
     chmod 600 ~/.ssh/id_rsa && \
     ssh-keyscan github.com >> ~/.ssh/known_hosts
 
+echo "$GH_ACTION_DEPLOY_KEY"
+
 WORKDIR /site/
 ADD . /site/
 
