@@ -10,9 +10,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
+    - name: SSH Configure Agent
     - uses: webfactory/ssh-agent@v0.2.0
       with:
         ssh-private-key: ${{ secrets.GH_ACTION_DEPLOY_KEY }}
+    - name: SSH Trust hosts
+      run: for ip in $(dig @8.8.8.8 github.com +short); do ssh-keyscan github.com,$ip; ssh-keyscan $ip; done 2>/dev/null >> ~/.ssh/known_hosts
     - name: Build the Docker image
       run: docker build .
       
