@@ -11,7 +11,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: SSH Configure Agent
-    - uses: webfactory/ssh-agent@v0.2.0
+      uses: webfactory/ssh-agent@v0.2.0
       with:
         ssh-private-key: ${{ secrets.GH_ACTION_DEPLOY_KEY }}
     - name: SSH Trust hosts
