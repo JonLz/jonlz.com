@@ -1,9 +1,6 @@
 # Start with a bare bones image that already has hugo installed
 FROM klakegg/hugo:0.64.1-alpine
 
-# Allow setting GH_ACTION_DEPLOY_KEY via the docker build command
-ARG GH_ACTION_DEPLOY_KEY
-
 # We need git to commit and openssh to push
 RUN apk add git openssh
 RUN git config --global user.email "jon.lazar@gmail.com" && \
