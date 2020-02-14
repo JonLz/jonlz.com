@@ -3,12 +3,17 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://www.jonlz.com/posts/first/</loc>
-    <lastmod>2020-02-13T21:48:14-05:00</lastmod>
+    <loc>http://www.jonlz.com/about/</loc>
+    <lastmod>2020-02-13T22:40:49-05:00</lastmod>
   </url>
   
   <url>
     <loc>http://www.jonlz.com/</loc>
+    <lastmod>2020-02-13T22:40:49-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.jonlz.com/posts/first/</loc>
     <lastmod>2020-02-13T21:48:14-05:00</lastmod>
   </url>
   
@@ -19,6 +24,10 @@
   
   <url>
     <loc>http://www.jonlz.com/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>http://www.jonlz.com/projects/</loc>
   </url>
   
   <url>

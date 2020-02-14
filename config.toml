@@ -41,6 +41,10 @@ canonifyurls = true
     weight = 1
     url  = "/posts/"
 [[menu.main]]
+    name = "Projects"
+    weight = 1
+    url  = "/projects/"
+[[menu.main]]
     name = "About"
     weight = 2
     url = "/about/"
