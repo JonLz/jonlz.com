@@ -26,6 +26,10 @@ RUN git remote rm origin && \
     git remote add origin git@github.com:jonlz/jonlz.github.com && \
     git fetch
 
+# My theme is configured as a submodule so I need to pull it in. You may not
+# need this if you have committed your theme directly to your repository.
+RUN git submodule update --init --recursive
+
 # Checkout the gh-pages branch as a working tree so that generated hugo files
 # are ready to be committed in that branch.
 RUN git worktree add -B gh-pages public origin/gh-pages
