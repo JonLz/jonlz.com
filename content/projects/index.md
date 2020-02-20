@@ -16,3 +16,7 @@ This app will hit on many iOS fundamental concepts and help you understand how t
 ![Game](/images/projects/gif-memory-game/Game.png)
 
 [Github Repo](http://www.github.com/JonLz/gif-memory-game/)
+
+##### Notes
+
+This project was built in February 2016 so the code is in Objective-C with best practices I knew of at the time. While it is still useful to learn UIKit and Foundation patterns I recommend reading it in combination with other source material discussing best practices in modern Swift.
