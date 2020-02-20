@@ -25,15 +25,15 @@ canonifyurls = true
     weight = 1
     url = "https://github.com/JonLz"
 [[params.social]]
+    name = "LinkedIn"
+    icon = "fab fa-linkedin fa-2x"
+    weight = 2
+    url = "https://linkedin.com/in/jonlazar"
+[[params.social]]
     name = "Twitter"
     icon = "fab fa-twitter fa-2x"
     weight = 3
     url = "https://twitter.com/LzJon/"
-[[params.social]]
-    name = "LinkedIn"
-    icon = "fab fa-linkedin fa-2x"
-    weight = 1
-    url = "https://linkedin.com/in/jonlazar"
 
 # Menu links
 [[menu.main]]
