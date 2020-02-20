@@ -34,6 +34,11 @@ canonifyurls = true
     icon = "fab fa-twitter fa-2x"
     weight = 3
     url = "https://twitter.com/LzJon/"
+[[params.social]]
+    name = "Email"
+    icon = "fab fa-envelope-square fa-2x"
+    weight = 4
+    url = "mailto:jon.lazar@gmail.com"
 
 # Menu links
 [[menu.main]]
