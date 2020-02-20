@@ -30,14 +30,9 @@ canonifyurls = true
     weight = 2
     url = "https://linkedin.com/in/jonlazar"
 [[params.social]]
-    name = "Twitter"
-    icon = "fab fa-twitter fa-2x"
-    weight = 3
-    url = "https://twitter.com/LzJon/"
-[[params.social]]
     name = "Email"
-    icon = "fab fa-envelope-square fa-2x"
-    weight = 4
+    icon = "fas fa-envelope fa-2x"
+    weight = 3
     url = "mailto:jon.lazar@gmail.com"
 
 # Menu links
